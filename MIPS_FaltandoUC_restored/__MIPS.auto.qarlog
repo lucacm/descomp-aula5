@@ -1,0 +1,31 @@
+Quartus Prime Archive log --	C:/Users/lucam/Documents/Insper/Descomp/descomp-entregas/MIPS_FaltandoUC_restored/__MIPS.auto.qarlog
+
+Archive:	C:/Users/lucam/Documents/Insper/Descomp/descomp-entregas/MIPS_FaltandoUC_restored/__MIPS.auto.qar
+Date:		Wed May 25 01:16:24 2022
+Quartus Prime		20.1.0 Build 711 06/05/2020 SJ Lite Edition
+
+	=========== Files Selected: ===========
+C:/Users/lucam/Documents/Insper/Descomp/descomp-entregas/MIPS_FaltandoUC_restored/db/MIPS.qpf
+C:/Users/lucam/Documents/Insper/Descomp/descomp-entregas/MIPS_FaltandoUC_restored/output_files/MIPS.flow.rpt
+C:/Users/lucam/Documents/Insper/Descomp/descomp-entregas/MIPS_FaltandoUC_restored/output_files/MIPS.map.rpt
+C:/Users/lucam/Documents/Insper/Descomp/descomp-entregas/MIPS_FaltandoUC_restored/output_files/MIPS.map.summary
+CPU.vhd
+MIPS.qsf
+MIPS.restore.rpt
+RAMMIPS.vhd
+ROMMIPS.vhd
+ULA1Bit.vhd
+ULA32Bits.vhd
+ULASomaSub.vhd
+assignment_defaults.qdf
+bancoRegistradores.vhd
+estendeSinalGenerico.vhd
+muxGenerico2x1.vhd
+registradorGenerico.vhd
+somaConstante.vhd
+unidadeDeControle.vhd
+unidadeDeControleULA.vhd
+	======= Total: 20 files to archive =======
+
+	================ Status: ===============
+All files archived successfully.

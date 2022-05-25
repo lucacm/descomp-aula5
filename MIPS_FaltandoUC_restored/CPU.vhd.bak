@@ -1,0 +1,122 @@
+library IEEE;
+use IEEE.std_logic_1164.all;
+use ieee.numeric_std.all;
+
+entity CPU is
+  -- Total de bits das entradas e saidas
+  generic ( larguraDados : natural := 32;
+				larguraDadosROM : natural := 32;
+				larguraEnderecoROM : natural := 32;
+				larguraDadosImediato : natural := 16;
+        simulacao : boolean := FALSE -- para gravar na placa, altere de TRUE para FALSE
+  );
+  port   (
+    CLOCK_50 : in std_logic;
+	 Escrita_REG : in std_logic;
+	 Operacao : std_logic_vector(2 downto 0)
+  );
+  
+end entity;
+
+architecture arquitetura of CPU is
+
+
+  signal entradaA_ULA : std_logic_vector (larguraDados-1 downto 0);
+  signal entradaB_ULA : std_logic_vector (larguraDados-1 downto 0);
+  signal Saida_ULA : std_logic_vector (larguraDados-1 downto 0);
+  signal Saida_ROM : std_logic_vector (larguraDadosROM-1 downto 0); -- INSTRUCAO
+  signal Sinais_Controle : std_logic_vector (11 downto 0);
+  signal endereco : std_logic_vector (larguraEnderecoROM-1 downto 0);
+  signal somador : std_logic_vector (larguraEnderecoROM-1 downto 0);
+  signal CLK : std_logic;
+  signal Habilita_REG : std_logic;
+  signal Habilita_FF : std_logic;
+  signal Operacao_ULA : std_logic_vector(2 downto 0);
+  signal flag_ULA : std_logic;
+  signal SigExt : std_logic_vector(31 downto 0); -- (Imediato)
+  signal Dado_Lido_RAM : std_logic_vector(31 downto 0);
+ 
+
+begin
+
+CLK <= CLOCK_50;
+
+-- O port map completo do Program Counter:			 
+PC : entity work.registradorGenerico   generic map (larguraDados => larguraEnderecoROM)
+          port map (DIN => saida_MUX_PROXPC, DOUT => endereco, ENABLE => '1', CLK => CLK, RST => '0');
+			 
+-- O port map completo do somador que incrementa o endereço do Program Counter:			 			 
+somaConstante :  entity work.somaConstante  generic map (larguraDados => larguraEnderecoROM, constante => 4)
+        port map( entrada => endereco, saida => somador);
+		  
+-- Port map ROM:
+ROM : entity work.ROMMIPS
+          port map (Endereco => endereco, Dado => Saida_ROM, clk => CLK);
+
+-- Port map ROM:
+-- FALTA COMPLETAR!!!
+RAM : entity work.RAMMIPS
+          port map (clk => CLK, Endereco => Saida_ULA, Dado_in => entradaB_ULA, Dado_out => Dado_Lido_RAM, we => , re => , habilita => );
+			 
+-- O port map completo do Banco de registradores.
+-- PRECISA MUDAR O "escreveC"
+BancoRegistradores : entity work.bancoRegistradores
+          port map (clk => CLK, enderecoA => Saida_ROM(25 downto 21), enderecoB => Saida_ROM(20 downto 16), 
+			 enderecoC => Saida_ROM(15 downto 11), dadoEscritaC => saida_MUX_BANCOREG, escreveC => Habilita_REG, 
+			 saidaA => entradaA_ULA, saidaB => entradaB_ULA);
+			 
+-- O port map completo da ULA:
+-- PRECISA MUDAR O "seletor"
+ULA : entity work.ULASomaSub  generic map(larguraDados => larguraDados)
+          port map (entradaA => entradaA_ULA, entradaB => SigExt, saida => Saida_ULA, seletor => Operacao_ULA);
+
+-- O port map do extensor de sinal		 
+EXT_SIN : entity work.estendeSinalGenerico   generic map (larguraDadoEntrada => larguraDadosImediato, larguraDadoSaida => larguraDados)
+	port map (estendeSinal_IN => Saida_ROM(15 downto 0), estendeSinal_OUT =>  SigExt);
+
+-- O port map da unidade de lógica (é um decodificador genérico)
+-- FALTA FAZER A "saida"
+-- entrada é o opcode
+UNI_LOG :  entity work.decoderGeneric
+        port map( entrada => Saida_ROM(31 downto 26),
+                 saida => sinalLocal);
+					  
+
+MUX_PC : entity work.muxGenerico2x1
+			port map(entradaA_MUX => somador,
+						entradaB_MUX => std_logic_vector(shift_left(signed(SigExt),2) + signed(somador)),
+						seletor_MUX => (beq and flag_ULA),
+						saida_MUX => saida_MUX_PC);
+						
+MUX_ULA : entity work.muxGenerico2x1
+			 port map(entradaA_MUX => entradaB_ULA,
+						 entradaB_MUX => SigExt,
+						 seletor_MUX  => selMUX_RT_Imediato,
+						 saida_MUX    => saida_MUX_ULA);
+						 
+MUX_BANCOREG : entity work.muxGenerico2x1
+					port map(entradaA_MUX => Saida_ULA,
+								entradaB_MUX => Dado_Lido_RAM,
+								seletor_MUX  => selMUX_ULA_Imediato,
+								saida_MUX    => saida_MUX_BANCOREG);
+								
+MUX_END      : entity work.muxGenerico2x1
+					port map(entradaA_MUX => Saida_ROM(20 downto 16),
+								entradaB_MUX => Saida_ROM(15 downto 11),
+								seletor_MUX  => selMUX_Rt_Rd,
+								saida_MUX    => saida_MUX_END);
+								
+MUX_PROXPC   : entity work.muxGenerico2x1
+					port map(entradaA_MUX => saida_MUX_PC,
+								entradaB_MUX => (somador(31 downto 28) & shift_left(Saida_ROM(25 downto 0)),
+								seletor_MUX  => selMUX_BEQ_JMP,
+								saida_MUX    => saida_MUX_PROXPC);
+								
+						
+		 
+			 
+Habilita_REG <= Escrita_REG;
+Operacao_ULA <= Operacao;
+
+			 
+end architecture;

@@ -1,0 +1,31 @@
+Quartus Prime Archive log --	C:/Users/lucam/Documents/Insper/Descomp/descomp-entregas/MIPS_FaltandoUC_restored/MIPS_Luca_25_02_22_1_15_AM.qarlog
+
+Archive:	C:/Users/lucam/Documents/Insper/Descomp/descomp-entregas/MIPS_FaltandoUC_restored/MIPS_Luca_25_02_22_1_15_AM.qar
+Date:		Wed May 25 01:16:24 2022
+Quartus Prime		20.1.0 Build 711 06/05/2020 SJ Lite Edition
+
+	=========== Files Selected: ===========
+C:/Users/lucam/Documents/Insper/Descomp/descomp-entregas/MIPS_FaltandoUC_restored/CPU.vhd
+C:/Users/lucam/Documents/Insper/Descomp/descomp-entregas/MIPS_FaltandoUC_restored/MIPS.qpf
+C:/Users/lucam/Documents/Insper/Descomp/descomp-entregas/MIPS_FaltandoUC_restored/MIPS.qsf
+C:/Users/lucam/Documents/Insper/Descomp/descomp-entregas/MIPS_FaltandoUC_restored/MIPS.restore.rpt
+C:/Users/lucam/Documents/Insper/Descomp/descomp-entregas/MIPS_FaltandoUC_restored/RAMMIPS.vhd
+C:/Users/lucam/Documents/Insper/Descomp/descomp-entregas/MIPS_FaltandoUC_restored/ROMMIPS.vhd
+C:/Users/lucam/Documents/Insper/Descomp/descomp-entregas/MIPS_FaltandoUC_restored/ULA1Bit.vhd
+C:/Users/lucam/Documents/Insper/Descomp/descomp-entregas/MIPS_FaltandoUC_restored/ULA32Bits.vhd
+C:/Users/lucam/Documents/Insper/Descomp/descomp-entregas/MIPS_FaltandoUC_restored/ULASomaSub.vhd
+C:/Users/lucam/Documents/Insper/Descomp/descomp-entregas/MIPS_FaltandoUC_restored/assignment_defaults.qdf
+C:/Users/lucam/Documents/Insper/Descomp/descomp-entregas/MIPS_FaltandoUC_restored/bancoRegistradores.vhd
+C:/Users/lucam/Documents/Insper/Descomp/descomp-entregas/MIPS_FaltandoUC_restored/estendeSinalGenerico.vhd
+C:/Users/lucam/Documents/Insper/Descomp/descomp-entregas/MIPS_FaltandoUC_restored/muxGenerico2x1.vhd
+C:/Users/lucam/Documents/Insper/Descomp/descomp-entregas/MIPS_FaltandoUC_restored/output_files/MIPS.flow.rpt
+C:/Users/lucam/Documents/Insper/Descomp/descomp-entregas/MIPS_FaltandoUC_restored/output_files/MIPS.map.rpt
+C:/Users/lucam/Documents/Insper/Descomp/descomp-entregas/MIPS_FaltandoUC_restored/output_files/MIPS.map.summary
+C:/Users/lucam/Documents/Insper/Descomp/descomp-entregas/MIPS_FaltandoUC_restored/registradorGenerico.vhd
+C:/Users/lucam/Documents/Insper/Descomp/descomp-entregas/MIPS_FaltandoUC_restored/somaConstante.vhd
+C:/Users/lucam/Documents/Insper/Descomp/descomp-entregas/MIPS_FaltandoUC_restored/unidadeDeControle.vhd
+C:/Users/lucam/Documents/Insper/Descomp/descomp-entregas/MIPS_FaltandoUC_restored/unidadeDeControleULA.vhd
+	======= Total: 20 files to archive =======
+
+	================ Status: ===============
+All files archived successfully.
