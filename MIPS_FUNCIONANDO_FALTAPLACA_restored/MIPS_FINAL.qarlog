@@ -1,0 +1,37 @@
+Quartus Prime Archive log --	C:/Users/lucam/Documents/Insper/Descomp/descomp-entregas/MIPS_FUNCIONANDO_FALTAPLACA_restored/MIPS_FINAL.qarlog
+
+Archive:	C:/Users/lucam/Documents/Insper/Descomp/descomp-entregas/MIPS_FUNCIONANDO_FALTAPLACA_restored/MIPS_FINAL.qar
+Date:		Wed May 25 18:30:38 2022
+Quartus Prime		20.1.0 Build 711 06/05/2020 SJ Lite Edition
+
+	=========== Files Selected: ===========
+C:/Users/lucam/Documents/Insper/Descomp/descomp-entregas/MIPS_FUNCIONANDO_FALTAPLACA_restored/CPU.vhd
+C:/Users/lucam/Documents/Insper/Descomp/descomp-entregas/MIPS_FUNCIONANDO_FALTAPLACA_restored/MIPS.qpf
+C:/Users/lucam/Documents/Insper/Descomp/descomp-entregas/MIPS_FUNCIONANDO_FALTAPLACA_restored/MIPS.qsf
+C:/Users/lucam/Documents/Insper/Descomp/descomp-entregas/MIPS_FUNCIONANDO_FALTAPLACA_restored/RAMMIPS.vhd
+C:/Users/lucam/Documents/Insper/Descomp/descomp-entregas/MIPS_FUNCIONANDO_FALTAPLACA_restored/ROMMIPS.vhd
+C:/Users/lucam/Documents/Insper/Descomp/descomp-entregas/MIPS_FUNCIONANDO_FALTAPLACA_restored/ROMcontent.mif
+C:/Users/lucam/Documents/Insper/Descomp/descomp-entregas/MIPS_FUNCIONANDO_FALTAPLACA_restored/ULA1Bit.vhd
+C:/Users/lucam/Documents/Insper/Descomp/descomp-entregas/MIPS_FUNCIONANDO_FALTAPLACA_restored/ULA32Bits.vhd
+C:/Users/lucam/Documents/Insper/Descomp/descomp-entregas/MIPS_FUNCIONANDO_FALTAPLACA_restored/ULASomaSub.vhd
+C:/Users/lucam/Documents/Insper/Descomp/descomp-entregas/MIPS_FUNCIONANDO_FALTAPLACA_restored/Waveform.vwf
+C:/Users/lucam/Documents/Insper/Descomp/descomp-entregas/MIPS_FUNCIONANDO_FALTAPLACA_restored/Waveform1.vwf
+C:/Users/lucam/Documents/Insper/Descomp/descomp-entregas/MIPS_FUNCIONANDO_FALTAPLACA_restored/Waveform2.vwf
+C:/Users/lucam/Documents/Insper/Descomp/descomp-entregas/MIPS_FUNCIONANDO_FALTAPLACA_restored/Waveform3.vwf
+C:/Users/lucam/Documents/Insper/Descomp/descomp-entregas/MIPS_FUNCIONANDO_FALTAPLACA_restored/assignment_defaults.qdf
+C:/Users/lucam/Documents/Insper/Descomp/descomp-entregas/MIPS_FUNCIONANDO_FALTAPLACA_restored/bancoRegistradores.vhd
+C:/Users/lucam/Documents/Insper/Descomp/descomp-entregas/MIPS_FUNCIONANDO_FALTAPLACA_restored/conversorHex7Seg.vhd
+C:/Users/lucam/Documents/Insper/Descomp/descomp-entregas/MIPS_FUNCIONANDO_FALTAPLACA_restored/estendeSinalGenerico.vhd
+C:/Users/lucam/Documents/Insper/Descomp/descomp-entregas/MIPS_FUNCIONANDO_FALTAPLACA_restored/muxGenerico2x1.vhd
+C:/Users/lucam/Documents/Insper/Descomp/descomp-entregas/MIPS_FUNCIONANDO_FALTAPLACA_restored/output_files/Waveform.vwf
+C:/Users/lucam/Documents/Insper/Descomp/descomp-entregas/MIPS_FUNCIONANDO_FALTAPLACA_restored/output_files/Waveform1.vwf
+C:/Users/lucam/Documents/Insper/Descomp/descomp-entregas/MIPS_FUNCIONANDO_FALTAPLACA_restored/registradorGenerico.vhd
+C:/Users/lucam/Documents/Insper/Descomp/descomp-entregas/MIPS_FUNCIONANDO_FALTAPLACA_restored/somaConstante.vhd
+C:/Users/lucam/Documents/Insper/Descomp/descomp-entregas/MIPS_FUNCIONANDO_FALTAPLACA_restored/unidadeDeControle.vhd
+C:/Users/lucam/Documents/Insper/Descomp/descomp-entregas/MIPS_FUNCIONANDO_FALTAPLACA_restored/unidadeDeControleULA.vhd
+C:/Users/lucam/Documents/Insper/top secret/murilo_mips_restored/MIPS.sdc
+C:/Users/lucam/Documents/Insper/top secret/murilo_mips_restored/edgeDetector.vhd
+	======= Total: 26 files to archive =======
+
+	================ Status: ===============
+All files archived successfully.
