@@ -1,0 +1,32 @@
+Quartus Prime Archive log --	C:/Users/lucam/Documents/Insper/Descomp/descomp-entregas/MIPS_ATUALIZADO_restored/MIPS_QUASE.qarlog
+
+Archive:	C:/Users/lucam/Documents/Insper/Descomp/descomp-entregas/MIPS_ATUALIZADO_restored/MIPS_QUASE.qar
+Date:		Wed May 25 15:31:42 2022
+Quartus Prime		20.1.0 Build 711 06/05/2020 SJ Lite Edition
+
+	=========== Files Selected: ===========
+C:/Users/lucam/Documents/Insper/Descomp/descomp-entregas/MIPS_ATUALIZADO_restored/CPU.vhd
+C:/Users/lucam/Documents/Insper/Descomp/descomp-entregas/MIPS_ATUALIZADO_restored/MIPS.qpf
+C:/Users/lucam/Documents/Insper/Descomp/descomp-entregas/MIPS_ATUALIZADO_restored/MIPS.qsf
+C:/Users/lucam/Documents/Insper/Descomp/descomp-entregas/MIPS_ATUALIZADO_restored/RAMMIPS.vhd
+C:/Users/lucam/Documents/Insper/Descomp/descomp-entregas/MIPS_ATUALIZADO_restored/ROMMIPS.vhd
+C:/Users/lucam/Documents/Insper/Descomp/descomp-entregas/MIPS_ATUALIZADO_restored/ROMcontent.mif
+C:/Users/lucam/Documents/Insper/Descomp/descomp-entregas/MIPS_ATUALIZADO_restored/ULA1Bit.vhd
+C:/Users/lucam/Documents/Insper/Descomp/descomp-entregas/MIPS_ATUALIZADO_restored/ULA32Bits.vhd
+C:/Users/lucam/Documents/Insper/Descomp/descomp-entregas/MIPS_ATUALIZADO_restored/ULASomaSub.vhd
+C:/Users/lucam/Documents/Insper/Descomp/descomp-entregas/MIPS_ATUALIZADO_restored/Waveform.vwf
+C:/Users/lucam/Documents/Insper/Descomp/descomp-entregas/MIPS_ATUALIZADO_restored/Waveform1.vwf
+C:/Users/lucam/Documents/Insper/Descomp/descomp-entregas/MIPS_ATUALIZADO_restored/assignment_defaults.qdf
+C:/Users/lucam/Documents/Insper/Descomp/descomp-entregas/MIPS_ATUALIZADO_restored/bancoRegistradores.vhd
+C:/Users/lucam/Documents/Insper/Descomp/descomp-entregas/MIPS_ATUALIZADO_restored/conversorHex7Seg.vhd
+C:/Users/lucam/Documents/Insper/Descomp/descomp-entregas/MIPS_ATUALIZADO_restored/estendeSinalGenerico.vhd
+C:/Users/lucam/Documents/Insper/Descomp/descomp-entregas/MIPS_ATUALIZADO_restored/muxGenerico2x1.vhd
+C:/Users/lucam/Documents/Insper/Descomp/descomp-entregas/MIPS_ATUALIZADO_restored/output_files/Waveform.vwf
+C:/Users/lucam/Documents/Insper/Descomp/descomp-entregas/MIPS_ATUALIZADO_restored/registradorGenerico.vhd
+C:/Users/lucam/Documents/Insper/Descomp/descomp-entregas/MIPS_ATUALIZADO_restored/somaConstante.vhd
+C:/Users/lucam/Documents/Insper/Descomp/descomp-entregas/MIPS_ATUALIZADO_restored/unidadeDeControle.vhd
+C:/Users/lucam/Documents/Insper/Descomp/descomp-entregas/MIPS_ATUALIZADO_restored/unidadeDeControleULA.vhd
+	======= Total: 21 files to archive =======
+
+	================ Status: ===============
+All files archived successfully.
